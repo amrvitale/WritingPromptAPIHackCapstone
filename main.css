@@ -42,9 +42,11 @@ cursor: pointer;
 }
 .promptDescription {
   text-align: center;
+  list-style: none;
 }
 ol {
   text-align: center;
+  font-style: bold;
 }
 h1 {
   text-align: center;
