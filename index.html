@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dr. Muse's Fantastical Writing Prompt Generator</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div id="container">
+        <section class="js-welcomeWriter">
+            <h1>Welcome to Dr. Muse's Fantastical Writing Prompt Generator!</h1>
+            <p>You're here because you're a writer, and you need ideas, right? You've come to the right place!
+              <br>  <br>  From this writing prompt generator, you will receive:
+              <ol class="promptDescription">
+                <li>Your genre-inspired plot image</li>
+                <li>A theme-inspired quote</li>
+                <li>A character's name and location</li>
+                </ol>
+               Click the button below to discover your writing muse.
+            </p>
+            <input type="submit" value="Start" class="start btn">
+        </section>
+        <section class="genreChoice hidden">
+            <h1>Choose a genre...and begin the creative process!</h1>
+            <select class="chooseGenre">
+                <option value="choose">Choose a genre</option>
+                <option value="Classic">Classic</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Crime/Detective">Crime/Detective</option>
+                <option value="Historical Fiction">Historical Fiction</option>
+                <option value="Horror">Horror</option>
+                <option value="Romance">Romance</option>
+                <option value="Romantic Comedy">Romantic Comedy</option>
+                <option value="Suspense/Thriller">Suspense/Thriller</option>
+              </select>
+        </section>
+
+        <section class="pixabayImgsection hidden">
+         <h1 class="plot"></h1>
+            <section class="pixabayPlaceholder">
+              <img class="pixabayPlaceholderImg"  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="some text">
+            </section>
+            <input type="button" value="Next" class="nextBtn1 btn">
+        </section>
+
+        <section class="themeChoice hidden">
+            <h1>Now, choose a theme!</h1>
+
+            <select class="chooseTheme">
+                <option value="choose">Choose a theme</option>
+                <option value="Art">Art</option>
+                <option value="Courage">Courage</option>
+                <option value="Dreams">Dreams</option>
+                <option value="Fear">Fear</option>
+                <option value="Future">Future</option>
+                <option value="Goodness">Goodness</option>
+                <option value="Happiness">Happiness</option>
+                <option value="Imagination">Imagination</option>
+                <option value="Love">Love</option>
+                <option value="Money">Money</option>
+                <option value="Philosophy">Philosophy</option>
+                <option value="Power">Power</option>
+                <option value="Science">Science</option>
+                <option value="Strength">Strength</option>
+                <option value="Talent">Talent</option>
+                <option value="Time">Time</option>
+                <option value="Truth">Truth</option>
+                <option value="War">War</option>
+                <option value="Waste">Waste</option>
+            </select>
+        </section>
+
+        <section class="quote hidden">
+            <h1>Your chosen theme has summoned Clio, the Muse of History!</h1>
+            <p class="quoteIntro">Let this quote of yesteryear spark ideas for your story's theme:</p>
+        <section class="quotePlaceholder">
+        </section>
+
+        <input type="submit" value="Next" class="nextBtn2 btn">
+        </section>
+
+        <section class="protagonistGenerator hidden">
+            <h1>We still need a protagonist and location for your story!</h1>
+            <input type="submit" value="MEET MY PROTAGONIST!" class="protagBtn btn">
+        </section>
+
+        <section class="protagResults hidden">
+            <h1>Your Protagonist and Location!</h1>
+            <p>Or...if the muses have whispered in your ear that this individual would be better suited as an antagonist, let the muses guide you!</p>
+            <section class="face"></section>
+            <input type="submit" value="SUMMON THE MUSES!" class="fullPrompt btn">
+        </section>
+        
+        <section class="fullPromptPage hidden">
+            <h1>Here's your full prompt!</h1>
+            <section class="fullPromptResults">
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
