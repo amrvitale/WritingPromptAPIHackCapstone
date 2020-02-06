@@ -1,28 +1,19 @@
   
 * {
   box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;  
+
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-}
+  background-color: beige;
+  }
 
 input[type="button"] {
   padding: 5px;
 }
 
-.btn {
-background-color: purple;
-border: none;
-color: white;
-padding: 15px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 25px;
-margin: 4px 2px;
-cursor: pointer;
-}
+
 
 .container {
   max-width: 700px;
@@ -51,12 +42,17 @@ ol {
 h1 {
   text-align: center;
 }
-value {
-font-weight: bold;
-color: blueviolet;
-}
+.btn {
+  background-color: purple; 
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  }
 .pixabayPlaceholderImg {
-  max-width: 20%;
+  max-width: 30%;
 }
 
 .quoteIntro {
@@ -64,3 +60,69 @@ font-weight: bold;
 
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+p {
+    text-align: center;
+    font-size: 14px;
+    max-width: 100%;
+  }
+.pixabayPlaceholderImg {
+  max-width: 60%;
+} 
+
+
+.btn {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+}  
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+p {
+  text-align: center;
+  font-size: 30px;
+  max-width: 100%;
+}
+
+.btn {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+}  
+}
+
+@media only screen and (min-device-width: 1367px) and (max-device-width: 1600px) {
+  p {
+  text-align: center;
+  font-size: 35px;
+  max-width: 100%;
+}
+
+ .btn {
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  margin: 4px 2px;
+  cursor: pointer;
+}  
+}

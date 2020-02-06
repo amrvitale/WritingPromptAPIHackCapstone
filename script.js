@@ -70,7 +70,7 @@ function callImageAPI() {
       var $option = $(this).find('option:selected');
        value = $option.val();
       var text = $option.text();
-      $('.plot').text(`Excellent choice! Let this image act as an inspiration for your ${value} plot!`)
+      $('.plot').text(`Excellent choice! Let this image act as an inspiration for your ${value} plot! (Give it a second!)`)
 
       const searchTerm = searchTermsByGenre[value];
       console.log(value, searchTerm)
@@ -152,6 +152,9 @@ function callQuoteAPI() {
     });
   };
 
+  function startOver(){
+    window.location.reload();
+  }
 
 $(callImageAPI);
 $(callQuoteAPI);
