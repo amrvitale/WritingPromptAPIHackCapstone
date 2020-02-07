@@ -94,7 +94,7 @@ function callQuoteAPI() {
   });
  //user chooses a theme which corresponds to a quote. Upon choosing theme, themeChoice section disappears and quote section appears 
  $(document).on('change', '.chooseTheme', function() {
-   debugger
+   
   $('.themeChoice').hide();
   $('.quote').show();
   var $option = $(this).find('option:selected');
