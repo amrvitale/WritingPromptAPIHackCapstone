@@ -62,7 +62,7 @@ function callImageAPI() {
         $('.js-welcomeWriter').hide();
         $('.genreChoice').show();
     });
-     
+
 //user selects genre, chooseGenre section hides and pixabay section with image appears, along with header including template literal of genre //option value
     $('.chooseGenre').change(function() {
       $('.genreChoice').hide();
@@ -77,8 +77,8 @@ function callImageAPI() {
       const randomNum = (Math.floor(Math.random() * 50))
        fetch(`https://pixabay.com/api/?key=${PIXABAY.pixaKEY}&q=${encodeURIComponent(searchTerm)}&per_page=50&image_type=photo`)
         .then(response => response.json())
-        .then(responseJson => { 
-        
+        .then(responseJson => {
+
           myPic = `<img src="${responseJson.hits[randomNum].largeImageURL}" class="pixabayPlaceholderImg">`;
           console.log(responseJson);
           $('.pixabayPlaceholderImg').replaceWith(`${myPic}`)
@@ -87,12 +87,12 @@ function callImageAPI() {
 };
 
 //user clicks Next, pixabayImgsection hides and numberChoice section appears
-function callQuoteAPI() { 
+function callQuoteAPI() {
   $('.nextBtn1').on('click',function() {
     $('.pixabayImgsection').hide();
     $('.themeChoice').show();
   });
- //user chooses a theme which corresponds to a quote. Upon choosing theme, themeChoice section disappears and quote section appears 
+ //user chooses a theme which corresponds to a quote. Upon choosing theme, themeChoice section disappears and quote section appears
  $(document).on('change', '.chooseTheme', function() {
    debugger
   $('.themeChoice').hide();
@@ -101,11 +101,11 @@ function callQuoteAPI() {
   var value = $option.val();
   var text = $option.text();
   const quoteTopic = numToQuote[value];
-  console.log(value, quoteTopic) 
+  console.log(value, quoteTopic)
   const randomQuote = (Math.floor(Math.random() * 10))
   fetch (`https://quote-garden.herokuapp.com/quotes/search/${quoteTopic}`)
     .then(response => response.json())
-    .then(responseJson => {     
+    .then(responseJson => {
          myQuote = `<p>${responseJson.results[randomQuote].quoteText}</p>
         <p>${responseJson.results[randomQuote].quoteAuthor}</p>`;
           console.log(responseJson);
@@ -127,9 +127,9 @@ function callQuoteAPI() {
    fetch (`https://randomuser.me/api/`)
    .then (response => response.json())
    .then(responseJson => {
-     myRandomUser = 
-       `<p>${responseJson.results[0].name.title} 
-       ${responseJson.results[0].name.first} 
+     myRandomUser =
+       `<p>${responseJson.results[0].name.title}
+       ${responseJson.results[0].name.first}
        ${responseJson.results[0].name.last}</p>
        <p>${responseJson.results[0].location.country}</p>`
        $('.face').append(`<p>${myRandomUser}</p>`);
@@ -137,7 +137,7 @@ function callQuoteAPI() {
  });
 }
  //user clicks give me my full prompt, which hides protagResults section and shows fullPromptPage section
- function displayAllPromptParts() { 
+ function displayAllPromptParts() {
  $('.fullPrompt').on('click', function() {
    $('.protagResults').hide();
    $('.fullPromptPage').show();

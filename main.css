@@ -1,33 +1,32 @@
-  
 * {
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;  
+    font-family: 'Nunito', sans-serif;
 
   }
-  
+
   body {
     background-color: beige;
     }
-  
+
   input[type="button"] {
     padding: 5px;
   }
-  
 
-  
+
+
   .container {
     max-width: 700px;
     margin: 0 auto;
   }
-  
+
   .error-message {
       color: red;
   }
-  
+
   .hidden {
     display: none;
   }
-  
+
   #container {
     text-align: center;
   }
@@ -43,7 +42,7 @@
     text-align: center;
   }
   .btn {
-    background-color: purple; 
+    background-color: purple;
     border: none;
     color: white;
     padding: 10px;
@@ -68,9 +67,9 @@
     }
   .pixabayPlaceholderImg {
     max-width: 60%;
-  } 
+  }
 
-  
+
   .btn {
     background-color: purple;
     border: none;
@@ -82,7 +81,7 @@
     font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
-  }  
+  }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
@@ -103,7 +102,7 @@
     font-size: 30px;
     margin: 4px 2px;
     cursor: pointer;
-  }  
+  }
 }
 
 @media only screen and (min-device-width: 1367px) and (max-device-width: 1600px) {
@@ -124,5 +123,5 @@
     font-size: 35px;
     margin: 4px 2px;
     cursor: pointer;
-  }  
+  }
 }
