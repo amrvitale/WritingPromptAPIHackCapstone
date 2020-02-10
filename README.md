@@ -13,4 +13,7 @@ The final screen displays all prompt pieces together, along with a button to res
 
 Technology Used<br>
 HTML, CSS, JavaScript, jQuery
+
+Screenshots<br>
+<img src="https://github.com/amrvitale/WritingPromptAPIHackCapstone/blob/master/start%20screen.PNG">
 <img src="https://github.com/amrvitale/WritingPromptAPIHackCapstone/blob/master/final%20screen%20full%20prompt.PNG">
